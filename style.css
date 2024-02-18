@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: hsl(0, 0%, 90%);
+    color: hsl(60, 10%, 19%);
+    font-family: League Spartan, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.wrapper{
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 20px;
+}
+
+.container{
+    padding: 30px;
+    background-color: hsl(0, 6%, 83%);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#display{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background-color: hsl(0, 5%, 81%);
+    width: 99%;
+    height: 60px;
+    font-size: 2rem;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;   
+}
+
+button{
+    border: none;
+    font-size: 16px;
+    background-color: hsl(46, 12%, 79%);
+    box-shadow: 0 5px 5px 0 hsl(35, 11%, 61%);
+    padding: 30px 30px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.resetBtn{
+    display: grid;
+    grid-column: span 2;
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0 5px 5px 0  hsl(185, 58%, 25%);
+    
+}
+
+.equalBtn{
+    display: grid;
+    grid-column: span 2;
+    background-color:  hsl(25, 98%, 40%);
+    box-shadow: 0 5px 5px 0  hsl(25, 99%, 27%);
+}
+
+
+.attribution { 
+    font-size: 14px; 
+    text-align: center; 
+}
+
+.attribution a 
+{ color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 1280px){
+    .wrapper{
+        width: 40%;
+        margin: auto;
+        text-align: center;
+    }
+}
