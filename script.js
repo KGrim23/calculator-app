@@ -15,6 +15,9 @@ function deleteDisplay(){
 }
 
 function calculate(){
+    if (!display.value){
+        display.value = 0;
+    }
     try{
         display.value = eval(display.value);
     }
